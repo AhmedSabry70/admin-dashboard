@@ -1,0 +1,108 @@
+
+
+.sidebar{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    transition: all 0.3s ease;
+
+    .logo{
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        font-size: 22ox;
+        font-weight: 600;
+        gap: .5rem;
+        height: 3%;
+        text-transform: capitalize;
+
+
+        img{
+            width: 4rem;
+            height: 4rem;
+        }
+
+        span >span {
+            color: var(--pink-clr);
+        }
+        
+        @media screen and (max-width:1200px) {
+            display: none;
+        }
+
+    }
+
+    @media screen and (max-width:768px) {
+        display: none;
+    }
+    
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+
+    .menuItem{
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        height: 2.5rem;
+        margin-left: 2rem;
+
+        font-size: 14px;
+        border-radius: 0.7rem;
+        cursor: pointer;
+       // overflow: hidden;
+
+        transition: all 0.3s ease;
+
+
+
+        &:last-child{
+            position: absolute;
+            bottom: 2.3rem;
+            width: 100%;
+        }
+
+        &:hover:not(:last-child),
+        &.active:not(:last-child){
+            background: var(--active-clr);
+            margin-left: 0.6rem;
+
+
+            &::before{
+                content: '';
+                width: 8px;
+                height: 100%;
+                background: var(--pink-clr);
+                //some tricky to more ui prefect (half of margin-left minus widt of ::befor)
+                margin-right: calc(1rem - 8px);
+            }
+        }
+
+
+        span{
+
+            @media screen and (max-width:1200px) {
+                display: none;
+            }
+        }
+        // &__active{
+        //     background: var(--active-clr);
+        //     margin-left: 0.6rem;
+        // }
+
+        // &__active::before{
+        //     content: '';
+        //     width: 8px;
+        //     height: 100%;
+        //     background: var(--pink-clr);
+        // }
+
+
+    }
+}

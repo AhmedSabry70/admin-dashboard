@@ -1,13 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+
+:root {
+  --font-base: 'Inter', sans-serif;
+  --yellow-clr:linear-gradient(180deg, #f8d49a -146.42%, #fad79d -46.55);
+  --orange-clr: #fca61f;
+  --dark-clr:#242d49;
+  --gray-clr: #788097;
+  --purple-clr:linear-gradient(180deg, #bb97ff 0%, #c484f3 100%);
+  --pink-clr:#ff919d;
+  --glass:rgba(255, 255, 255, 0.54);
+  --shadow-primary:0px 19px 60px rgba(0, 0, 0, 0.08);
+  --shadow-secondary:-79px 51px 60px rgba(0, 0, 0, 0.08);
+
+  --active-clr:#f799a354;
+
+
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:  'Inter', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }

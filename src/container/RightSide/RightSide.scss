@@ -1,0 +1,13 @@
+.rightside {
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+    @media screen and (max-width:1200px) {
+       justify-content: flex-start;
+       margin-top: 3rem;
+          
+      }
+}

@@ -1,0 +1,99 @@
+.table {
+  //padding: 20px; 
+  //max-height: 60vh;
+  
+  margin: 20px 0 0px;
+  .tableContainer {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.266), 0 0 30px rgba(218, 194, 194, 0.2);
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 5px;
+    .srol {
+     max-height:400px;
+      height: 100%;
+     
+     overflow: auto !important;
+
+   
+      
+    }
+  }
+
+
+  h3 {
+    padding-bottom: 2rem;
+  }
+
+
+  @media screen and (max-width:1200px) {
+   width: 170%;
+      margin-top: 2rem;
+  }
+
+
+  @media screen and (max-width:768px) {
+   // position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem;
+}
+
+}
+
+
+table {
+  width: 100%;
+  border-spacing: 0rem;
+  position: relative;
+
+  thead {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #fff;
+  }
+
+  th,
+td {
+  padding: 20px;
+  margin: 10px;
+  text-align: left;
+  text-transform: capitalize;
+}
+th {
+  cursor: pointer;
+}
+td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+
+  span {
+    padding: 8px;
+    border-radius: 9px;
+  }
+  &.details {
+    color: #00b5ff;
+  }
+}
+
+.th-sort-asc::after {
+  content: "\25b4";
+}
+.th-sort-desc::after {
+  content: "\25be";
+}
+.th-sort-asc::after,
+.th-sort-desc::after {
+  margin-left: 5px;
+}
+.th-sort-asc,
+.th-sort-desc {
+  background: rgba(0, 0, 0, 0.2);
+}
+}
+
+
+
+
+
+//   =============================================

@@ -1,0 +1,76 @@
+import React from 'react'
+import Chart from 'react-apexcharts'
+import './CustomerReview.scss'
+
+const CustomerReview = () => {
+
+    
+
+    const data = {
+        series: [
+            {
+                name: 'Review',
+                data:[10,50,30,90,40,120,100],
+            }
+        ],
+        options: {
+            Chart: {
+                type: 'area',
+                height: 'auto',
+            },
+            dropShadow: {
+                enable: false,
+                enabledOnSeries: undefined,
+                top: 0,
+                left: 0,
+                blur: 3,
+                color: '#000',
+                opacity: 0.35,
+            },
+            fill: {
+                color: ['#fdcfef'],
+                type: 'gradient',
+            },
+            dataLabels: {
+               enabled:false
+            },
+            stroke: {
+                curve: 'smooth',
+                color: ['#fcbfcf'],
+            },
+            tooltip: {
+                x: {
+                    format: 'dd/mm/yy HH:mm',
+                }
+            },
+            grid: {
+                show:true,
+            },
+            xaxis: {
+                type: 'datetime',
+                categories: [
+                    '2018-09-19T00:00:00.000Z',
+                    '2018-09-19T01:00:00.000Z',
+                    '2018-09-19T02:00:00.000Z',
+                    '2018-09-19T03:00:00.000Z',
+                    '2018-09-19T04:00:00.000Z',
+                    '2018-09-19T05:00:00.000Z',
+                    '2018-09-19T06:00:00.000Z',
+                ],
+            },
+        },
+        
+    }
+
+
+  return (
+      <div className='customerReview'>
+        <Chart series={data.series} options={data.options} type='area' />
+    </div>
+  )
+}
+
+export default CustomerReview
+
+
+//SvgjsPath1416
